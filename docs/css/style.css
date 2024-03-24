@@ -1,96 +1,98 @@
     /* Setting global box model and margin/padding reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*border: 1px solid rgb(207, 201, 201, 50); */
-    /* Removed border to avoid interference with layout */
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    background-color: cornflowerblue;
-    max-width: 1100px; /* Limiting body width to 1100px */
-    margin: 0 auto; /* Centering body horizontally */
-}
-
-h1 {
-    text-align: center;
-    color: bisque;
-    padding: 20px;
-    text-shadow: #FC0 1px 0 10px;
-}
-
-/* Creating a flex container with space between items */
-.container {
-    display: flex;
-    margin: 5px;
-    justify-content: space-between;
-}
-
-/* Styling for section container */
-.section {
-    border: 1px solid black;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    min-height: 150px;
-    padding: 5px;
-    font-size: medium;
-    box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
-/* Styling for section title 1 */
-.section_title1 {
-    color: black;
-    background-color: rgb(214, 168, 168);
-    width: 50%;
-    border-radius: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin: 5px;
-    align-self: flex-end;
-}
-
-/* Styling for section title 2 */
-.section_title2 {
-    color: white;
-    background-color: rgb(52, 62, 97);
-    width: 50%;
-    border-radius: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin: 5px;
-    align-self: flex-end;
-}
-
-/* Styling for section title 3 */
-.section_title3 {
-    background-color: rgb(45, 85, 49);
-    width: 50%;
-    border-radius: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin: 5px;
-    align-self: flex-end;
-}
-
-@media (max-width: 991px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /*border: 1px solid rgb(207, 201, 201, 50); */
+        /* Removed border to avoid interference with layout */
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        background-color: cornflowerblue;
+        max-width: 1100px; /* Limiting body width to 1100px */
+        margin: 0 auto; /* Centering body horizontally */
+    }
+    
+    h1 {
+        text-align: center;
+        color: bisque;
+        padding: 20px;
+        text-shadow: #FC0 1px 0 10px;
+    }
+    
+    /* Creating a flex container with space between items */
     .container {
-        flex-wrap: wrap; /* Making container items wrap to new line */
+        display: flex;
+        margin: 5px;
+        justify-content: space-between;
     }
-
+    
+    /* Styling for section container */
     .section {
-        width: calc(50% - 10px); /* Adjusting section width for smaller screens and adding margin */
-        margin: 5px; /* Adding margin around sections */
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        min-height: 150px;
+        padding: 5px;
+        font-size: medium;
+        box-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     }
-}
-
-@media (max-width: 767px) {
-    .section {
-        width: 100%; /* Adjusting section width for even smaller screens */
+    
+    /* Styling for section title 1 */
+    .section_title1 {
+        color: black;
+        border: 2px solid darkblue;
+        background-color: rgb(214, 168, 168);
+        width: 50%;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin: 5px;
+        align-self: flex-end;
     }
-}
-
+    
+    /* Styling for section title 2 */
+    .section_title2 {
+        color: white;
+        border: 2px solid darkblue;
+        background-color: rgb(52, 62, 97);
+        width: 50%;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin: 5px;
+        align-self: flex-end;
+    }
+    
+    /* Styling for section title 3 */
+    .section_title3 {
+        background-color: rgb(45, 85, 49);
+        border: 2px solid darkblue;
+        width: 50%;
+        border-radius: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin: 5px;
+        align-self: flex-end;
+    }
+    
+    @media (max-width: 991px) {
+        .container {
+            flex-wrap: wrap; /* Making container items wrap to new line */
+        }
+    
+        .section {
+            width: calc(50% - 10px); /* Adjusting section width for smaller screens and adding margin */
+            margin: 5px; /* Adding margin around sections */
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .section {
+            width: 100%; /* Adjusting section width for even smaller screens */
+        }
+    }
